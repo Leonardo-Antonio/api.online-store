@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  api.online-store:
+    image: leo2001/api.online-store:1.0
+    container_name: api.online-store
+    stdin_open: true
+    tty: true
+    volumes:
+    - ~/go/src/api.online-store/:/go/src/api.online-store:ro
